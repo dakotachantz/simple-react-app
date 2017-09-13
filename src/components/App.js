@@ -27,8 +27,8 @@ class App extends Component {
       <div className="App">
         <div className="title">
           <div className="my-header">Earthquakes!</div>
+          <EarthquakeInfo />
         </div>
-        <EarthquakeInfo />
         <EarthquakeList quakes={this.state.quakes} />
       </div >
     );

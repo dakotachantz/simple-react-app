@@ -1,20 +1,28 @@
-.App {
-  background-color: lightgrey;
+* {
+  font-family: 'Open Sans', sans-serif;
 }
 
-.title {
-  height: 80px;
-  padding-top: 20px;
-  background-color: black;
-  vertical-align: center;
+.App {
+  background-image: url("../img/topography.png");
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .my-header {
   text-align: center;
-  font-size: 40px;
-  color: orange;
-  text-shadow: 2px 2px 5px grey;
+  font-size: 5em;
+  color: #fff;
+  text-shadow: 1px 1px 1px black;
   animation: shake infinite 5s linear;
+  transition: 3s ease;
 }
 
 @keyframes shake {
@@ -34,6 +42,8 @@
 
 .quake-list {
   padding-top: 30px;
+  width: 95%;
+  margin: 0 auto;
 }
 
 .card {
@@ -41,12 +51,20 @@
   margin: 10px;
 }
 
-.earthquake-title {
+.title {
   color: white;
   text-shadow: 1px 1px 1px black;
-  font-size: 30px;
+  font-size: 2em;
   text-align: center;
-  height: 200px;
-  background-image: url('http://www.sanandreasfault.org/4020_A.jpg');
-  background-position: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url('http://news.nationalgeographic.com/content/dam/news/2016/08/24/italy_earthquake/01-italy-earthquake.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  box-shadow: 0 4px 4px -2px gray;
 }
